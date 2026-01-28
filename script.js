@@ -26,8 +26,8 @@ const PRECOS = {
 ===================== */
 const DESLOC_POR_CIDADE = {
   "matosinhos": 0,
-  "porto": 2,
-  "vila nova de gaia": 5,
+  "porto": 3.5,
+  "custoias": 2.5,
   "gaia": 5,
   "maia": 4,
   "gondomar": 4,
