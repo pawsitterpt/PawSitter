@@ -789,7 +789,12 @@ function renderReviews() {
     html.push('<div class="review-avatar-placeholder color-4"><i class="fas fa-user"></i></div>');
     html.push('<div class="review-info">');
     html.push(`<h4 class="review-name">${review.name}</h4>`);
-    html.push('<div class="review-stars">' + '★'.repeat(review.rating) + `<span class="review-rating">${review.rating}.0</span></div>`);
+    // build star icons so CSS targeting .review-stars i applies
+    let starsHtml = '';
+    for (let i = 0; i < review.rating; i++) {
+      starsHtml += '<i class="fas fa-star" aria-hidden="true"></i>';
+    }
+    html.push('<div class="review-stars">' + starsHtml + `<span class="review-rating">${review.rating}.0</span></div>`);
     html.push('</div></div>');
     html.push('<div class="review-text-content">');
     const text = (currentLang === 'en' ? review.text.en : review.text.pt) || '';
