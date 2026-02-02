@@ -447,9 +447,7 @@ const translations = {
     'faq-a6': 'A deslocação tem um valor base de €2,50 + €0,50 por cada quilómetro de distância. Este custo é aplicado a cada visita (ex: se escolher 2 visitas por dia, o custo é multiplicado por 2). Tudo é calculado automaticamente na nossa calculadora de preços.',
     
     // Reviews
-    'review1-text': 'Excelente experiência! A cadelinha ficou super bem tratada e feliz. Serviço profissional e atencioso. Recomendo a PawSitter sem dúvidas!',
-    'review2-text': 'Professional, competent and very nice person! Recommended',
-    'review3-text': 'Serviço excelente! Muito profissional e atencioso. O meu animal ficou super bem cuidado e feliz. Recomendo!',
+    'review4-text': 'A Bruna cuida com muito carinho da minha gata de 13 anos. A Frida adora os miminhos e a atenção quando preciso estar ausente, e eu ainda posso acompanhar e matar a saudade através dos vídeos e feedback da Bruna. Fico mais tranquila ao saber que ela fica em boas mãos, de quem tem também conhecimento sobre o assunto caso seja necessário. Recomendo muito o trabalho!',
     
     // Avaliações
     'reviews-title': 'O Que Dizem os Nossos Clientes',
@@ -659,9 +657,7 @@ const translations = {
     'faq-a6': 'Travel has a base value of €2.50 + €0.50 for each kilometer of distance. This cost is applied to each visit (e.g.: if you choose 2 visits per day, the cost is multiplied by 2). Everything is calculated automatically in our price calculator.',
     
     // Reviews
-    'review1-text': 'Excellent experience! The dog was very well cared for and happy. Professional and attentive service. I recommend PawSitter without a doubt!',
-    'review2-text': 'Professional, competent and very nice person! Recommended',
-    'review3-text': 'Excellent service! Very professional and attentive. My pet was very well cared for and happy. I recommend!',
+    'review4-text': 'Bruna takes great care of my 13-year-old cat. Frida loves the cuddles and attention when I need to be away, and I can follow updates and videos from Bruna. I feel reassured knowing she is in knowledgeable, caring hands. I highly recommend her work!',
     
     // Avaliações
     'reviews-title': 'What Our Clients Say',
@@ -760,3 +756,63 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
 
 // Aplicar idioma salvo ao carregar
 translatePage(currentLang);
+
+// --- Reviews data + renderer (simple to edit) ---
+// Edit this array to add/remove reviews. Each item may have: name, date, rating, text {pt,en}, image (optional path)
+const reviews = [
+  {
+    id: 'dialla-2026-01-23',
+    name: 'Dialla Dorneles',
+    date: '23/01/2026',
+    rating: 5,
+    text: {
+      pt: 'A Bruna cuida com muito carinho da minha gata de 13 anos. A Frida adora os miminhos e a atenção quando preciso estar ausente, e eu ainda posso acompanhar e matar a saudade através dos vídeos e feedback da Bruna. Fico mais tranquila ao saber que ela fica em boas mãos, de quem tem também conhecimento sobre o assunto caso seja necessário. Recomendo muito o trabalho!',
+      en: 'Bruna takes great care of my 13-year-old cat. Frida loves the cuddles and attention when I need to be away, and I can follow updates and videos from Bruna. I feel reassured knowing she is in knowledgeable, caring hands. I highly recommend her work!'
+    },
+    image: null
+  },
+];
+
+function renderReviews() {
+  const container = document.getElementById('reviewsGrid');
+  if (!container) return;
+  container.innerHTML = '';
+
+  reviews.forEach(review => {
+    const hasImage = review.image && review.image.trim() !== '';
+    const card = document.createElement('div');
+    card.className = 'review-card' + (hasImage ? '' : ' review-card-compact');
+
+    const html = [];
+    html.push('<div class="review-content">');
+    html.push('<div class="review-header">');
+    html.push('<div class="review-avatar-placeholder color-4"><i class="fas fa-user"></i></div>');
+    html.push('<div class="review-info">');
+    html.push(`<h4 class="review-name">${review.name}</h4>`);
+    html.push('<div class="review-stars">' + '★'.repeat(review.rating) + `<span class="review-rating">${review.rating}.0</span></div>`);
+    html.push('</div></div>');
+    html.push('<div class="review-text-content">');
+    const text = (currentLang === 'en' ? review.text.en : review.text.pt) || '';
+    html.push(`<p class="review-text">${text}</p>`);
+    html.push(`<p class="review-date"><i class="fas fa-calendar"></i> ${review.date}</p>`);
+    html.push('</div></div>');
+    if (hasImage) html.push(`<img src="${review.image}" alt="Foto de ${review.name}" class="review-photo">`);
+
+    card.innerHTML = html.join('');
+    container.appendChild(card);
+  });
+}
+
+// Re-render reviews after translations or language change
+function refreshReviewsForLanguage() {
+  renderReviews();
+}
+
+// Call renderer now and whenever language changes
+renderReviews();
+// Ensure language switch re-renders reviews
+const originalTranslatePage = translatePage;
+translatePage = function(lang) {
+  originalTranslatePage(lang);
+  refreshReviewsForLanguage();
+};
