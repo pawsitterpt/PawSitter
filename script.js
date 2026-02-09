@@ -434,7 +434,7 @@ const translations = {
     
     // FAQ Perguntas
     'faq-q1': 'O que está incluído em cada visita?',
-    'faq-a1': 'Cada visita inclui alimentação, água fresca, carinho e companhia, limpeza das áreas do animal (caixas de areia, comedouros), administração de medicação se necessário, e envio de fotos/atualizações para tranquilidade dos donos.',
+    'faq-a1': 'Cada visita inclui alimentação, água fresca, carinho e companhia, limpeza das áreas do animal (caixas de areia, comedouros), passeio com cães quando necessário, administração de medicação se necessário, e envio de fotos/atualizações para tranquilidade dos donos.',
     'faq-q2': 'Quanto tempo dura cada visita?',
     'faq-a2': 'Cada visita tem uma duração de aproximadamente 30-45 minutos, tempo suficiente para cuidar de todas as necessidades do seu animal, brincar e dar atenção. Se precisar de visitas mais longas, pode adicionar notas especiais na marcação.',
     'faq-q3': 'Como funciona o pagamento?',
@@ -644,7 +644,7 @@ const translations = {
     
     // FAQ Perguntas
     'faq-q1': 'What is included in each visit?',
-    'faq-a1': 'Each visit includes feeding, fresh water, affection and company, cleaning of pet areas (litter boxes, feeders), medication administration if necessary, and sending photos/updates for owners\' peace of mind.',
+    'faq-a1': 'Each visit includes feeding, fresh water, affection and company, cleaning of pet areas (litter boxes, feeders), dog walks when needed, medication administration if necessary, and sending photos/updates for owners\' peace of mind.',
     'faq-q2': 'How long does each visit last?',
     'faq-a2': 'Each visit lasts approximately 30-45 minutes, enough time to take care of all your pet\'s needs, play and give attention. If you need longer visits, you can add special notes when booking.',
     'faq-q3': 'How does payment work?',
