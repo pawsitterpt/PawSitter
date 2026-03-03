@@ -771,6 +771,17 @@ const reviews = [
     },
     image: null
   },
+{
+    id: 'viviane-2026-03-01',
+    name: 'Viviane Morais',
+    date: '01/03/2026',
+    rating: 5,
+    text: {
+      pt: 'Tivemos sorte de nossos caminhos terem se cruzado. Desde a primeira visita em casa, a Bruna sempre foi muito atenciosa e profissional. Ganhou nossa confiança pela forma que sempre tratou nosso gato Kimi. Com muita paciência e delicadeza, ela trata dele desde o ano passado. O comportamento do Kimi é ótimo sempre que usamos esse serviço e certamente melhor que outras experiências anteriores que tivemos. Ficamos tranquilos sabendo que ela cuida dele como se fosse dela. O Kimi agradece o carinho, tia Bruna!',
+      en: 'We were lucky that our paths crossed. From the first visit to our home, Bruna has always been very attentive and professional. She earned our trust with the way she has always treated our cat Kimi. With great patience and gentleness, she has been taking care of him since last year. Kimi s behavior is always great whenever we use this service and certainly better than other previous experiences we ve had. We feel reassured knowing that she takes care of him as if he were her own. Kimi thanks you for your affection, Aunt Bruna!'
+    },
+    image: 'Imagens reviews/Kimi_review.jpeg'
+    },
 ];
 
 function renderReviews() {
