@@ -2904,6 +2904,7 @@ section {
 
 .reviews-grid {
   display: flex;
+  align-items: flex-start; /* ensure cards only take the height they need */
   gap: 30px;
   margin-bottom: 50px;
   overflow-x: auto;
@@ -2949,13 +2950,25 @@ section {
 
 /* Card compacto sem foto */
 .review-card-compact {
-  min-width: 450px;
+  /* keep compact dimensions and adapt to content */
+  min-width: auto;
   max-width: 450px;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   gap: 15px;
   background: linear-gradient(135deg, #fafbfc 0%, #ffffff 100%);
   border: 1px solid #e8f4f3;
+}
+
+/* ensure compact cards do not stretch full height/width on small screens */
+@media (max-width: 768px) {
+  .review-card-compact {
+    min-width: auto;
+    max-width: 90vw;
+    width: auto;
+    padding: 25px;
+  }
 }
 
 .review-card:hover {
@@ -3194,7 +3207,11 @@ section {
   .review-photo {
     grid-column: 1;
     grid-row: auto;
-    height: 200px;
+    /* allow automatic height to preserve aspect ratio and prevent cropping */
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
     min-height: auto;
   }
 
