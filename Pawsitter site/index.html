@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PawSitter – Pet Sitting no Conforto do Lar</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container header-container">
+
+      <div class="logo-container">
+
+        <img src="logo.png" alt="Pawsitter" class="logo-svg">
+
+      </div>
+
+      <nav>
+
+        <ul>
+
+          <li><a href="#porque-escolher" data-lang="menu-sobre">Sobre</a></li>
+
+          <li><a href="#incluido" data-lang="menu-servicos">Serviços</a></li>
+
+          <li><a href="#contacto" data-lang="menu-contacto">Contacto</a></li>
+
+          <li><a href="#calculadora" class="btn-marcar" data-lang="menu-marcar">Marcar Serviço</a></li>
+
+        </ul>
+
+      </nav>
+
+      <div class="language-toggle">
+
+        <button class="lang-btn active" data-lang-switch="pt">PT</button>
+
+        <span class="lang-divider">|</span>
+
+        <button class="lang-btn" data-lang-switch="en">EN</button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="hero-grid">
+
+        <div class="hero-text">
+
+          <h1 data-lang="hero-title">Cuide do Seu Animal<br>de Estimação em <span class="highlight">Casa</span>, com <span class="highlight">Confiança</span></h1>
+
+          <p data-lang="hero-subtitle">Serviço profissional de petsitting ao domicílio. Marcação simples e rápida, acompanhamento dedicado e preços claros — sem surpresas.</p>
+
+         
+
+          <div class="badges">
+
+            <div class="badge"><i class="fas fa-check-circle"></i> <span data-lang="hero-badge1">100% Seguro</span></div>
+
+            <div class="badge"><i class="fas fa-clock"></i> <span data-lang="hero-badge2">Horários Flexíveis</span></div>
+
+            <div class="badge"><i class="fas fa-home"></i> <span data-lang="hero-badge3">No Conforto do Lar</span></div>
+
+          </div>
+
+
+
+          <div class="hero-buttons">
+
+            <button class="btn-primary" onclick="document.getElementById('calculadora').scrollIntoView()" data-lang="hero-btn1">Marcar Serviço Agora</button>
+
+            <button class="btn-outline" onclick="document.getElementById('como-funciona').scrollIntoView()" data-lang="hero-btn2">Ver Como Funciona</button>
+
+          </div>
+
+
+
+          <p class="small-note" data-lang="hero-note">— Sem compromisso · — Preço transparente · — Marcação instantânea</p>
+
+        </div>
+
+
+
+        <div class="hero-image-container">
+
+          <img src="https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?w=800&q=80" alt="Cão com dona" class="hero-image">
+
+          <div class="float-card">
+
+            <span class="paw">🐾</span>
+
+            Cuidado Profissional<br>Para cães e gatos
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- COMO FUNCIONA -->
+
+  <section id="como-funciona">
+
+    <div class="container">
+
+      <h2 data-lang="como-title">Como Funciona</h2>
+
+      <p class="subtitle" data-lang="como-subtitle">Marcar o cuidado do seu animal é simples e rápido. Sem telefonemas, sem esperas.</p>
+
+      <div class="steps-grid">
+
+        <div class="step-card">
+
+          <div class="step-circle">1</div>
+
+          <div class="step-icon"><i class="fas fa-calendar"></i></div>
+
+          <h3 class="step-title" data-lang="como-step1-title">Escolha as Datas</h3>
+
+          <p class="step-desc" data-lang="como-step1-desc">Selecione quando precisa do serviço e quantas visitas por dia</p>
+
+        </div>
+
+        <div class="step-card">
+
+          <div class="step-circle">2</div>
+
+          <div class="step-icon"><i class="fas fa-paw"></i></div>
+
+          <h3 class="step-title" data-lang="como-step2-title">Indique os Animais</h3>
+
+          <p class="step-desc" data-lang="como-step2-desc">Quantos cães e gatos tem? Pode combinar ambos</p>
+
+        </div>
+
+        <div class="step-card">
+
+          <div class="step-circle">3</div>
+
+          <div class="step-icon"><i class="fas fa-tag"></i></div>
+
+          <h3 class="step-title" data-lang="como-step3-title">Veja o Preço Final</h3>
+
+          <p class="step-desc" data-lang="como-step3-desc">Calculamos automaticamente incluído deslocação</p>
+
+        </div>
+
+        <div class="step-card">
+
+          <div class="step-circle">4</div>
+
+          <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+
+          <h3 class="step-title" data-lang="como-step4-title">Confirme a Marcação</h3>
+
+          <p class="step-desc" data-lang="como-step4-desc">Escolha o método de pagamento e está feito</p>
+
+        </div>
+
+      </div>
+
+      <div class="center-btn">
+
+        <button class="btn-primary" onclick="document.getElementById('calculadora').scrollIntoView()" data-lang="como-btn">Começar Agora</button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+<section id="porque-escolher" class="bg-soft-green">
+
+  <div class="container two-columns">
+
+   
+
+    <!-- IMAGENS -->
+
+    <div class="image-grid">
+
+      <img src="Imagem5.jpeg" alt="Pet em casa">
+
+      <div class="small-images">
+
+        <img src="Imagem1.jpeg" alt="Cão no sofá">
+
+        <img src="Imagem4.jpeg" alt="Gato com carinho">
+
+      </div>
+
+    </div>
+
+
+
+    <!-- TEXTO -->
+
+    <div class="content">
+
+      <h2 data-lang="porque-title">Porquê escolher a <span>Pawsitter</span>?</h2>
+
+      <p class="subtitle" data-lang="porque-subtitle">
+
+        O meu nome é Bruna e sou a pessoa por trás da PawSitter. Sou auxiliar veterinária e criei este serviço com muito amor e dedicação pelos animais.<br><br>
+
+        Sempre tive uma ligação especial com eles e acredito que merecem atenção, carinho e segurança, mesmo quando os tutores não podem estar presentes. Na PawSitter, trato cada animal como se fosse meu, respeitando as suas rotinas e necessidades.<br><br>
+
+        Se procura um serviço de petsitting responsável e experiente, a PawSitter é uma opção de confiança. 🐶🐱
+
+      </p>
+
+
+
+      <ul class="benefits">
+
+        <li>
+
+          <i class="fas fa-heart"></i>
+
+          <strong data-lang="porque-benefit1-title">Conforto do Lar</strong>
+
+          <p data-lang="porque-benefit1-desc">O seu animal fica em casa, sem stress de transportes ou espaços desconhecidos.</p>
+
+        </li>
+
+        <li>
+
+          <i class="fas fa-euro-sign"></i>
+
+          <strong data-lang="porque-benefit2-title">Preço Transparente</strong>
+
+          <p data-lang="porque-benefit2-desc">Sem valores escondidos. Vê o preço final antes de confirmar.</p>
+
+        </li>
+
+        <li>
+
+          <i class="fas fa-calendar"></i>
+
+          <strong data-lang="porque-benefit3-title">Flexibilidade Total</strong>
+
+          <p data-lang="porque-benefit3-desc">Escolha 1 ou 2 visitas por dia e combine cães e gatos.</p>
+
+        </li>
+
+        <li>
+
+          <i class="fas fa-bolt"></i>
+
+          <strong data-lang="porque-benefit4-title">Marcação Instantânea</strong>
+
+          <p data-lang="porque-benefit4-desc">Sem esperas. Faça o pedido online em minutos.</p>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+  </div>
+
+</section>
+
+<section id="incluido">
+
+  <div class="container">
+
+    <h2 data-lang="incluido-title">O Que Está Incluído</h2>
+
+    <p class="subtitle" data-lang="incluido-subtitle">
+
+      Cada visita é pensada para garantir o bem-estar completo do seu animal
+
+    </p>
+
+
+
+    <div class="cards-grid">
+
+      <div class="card">
+
+        <div class="icon"><i class="fas fa-bowl-food"></i></div>
+
+        <h3 data-lang="incluido-card1-title">Alimentação</h3>
+
+        <p data-lang="incluido-card1-desc">Respeitamos os horários e dietas indicadas por si.</p>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon"><i class="fas fa-heart"></i></div>
+
+        <h3 data-lang="incluido-card2-title">Carinho e Companhia</h3>
+
+        <p data-lang="incluido-card2-desc">Tempo de qualidade, brincadeiras e atenção dedicada.</p>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon"><i class="fas fa-droplet"></i></div>
+
+        <h3 data-lang="incluido-card3-title">Água Fresca</h3>
+
+        <p data-lang="incluido-card3-desc">Renovamos sempre a água e garantimos que está disponível.</p>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon"><i class="fas fa-soap"></i></div>
+
+        <h3 data-lang="incluido-card4-title">Higiene</h3>
+
+        <p data-lang="incluido-card4-desc">Limpeza das áreas de alimentação e espaços do animal.</p>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon"><i class="fas fa-pills"></i></div>
+
+        <h3 data-lang="incluido-card5-title">Medicação</h3>
+
+        <p data-lang="incluido-card5-desc">Administração conforme as suas instruções (se necessário).</p>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon"><i class="fas fa-camera"></i></div>
+
+        <h3 data-lang="incluido-card6-title">Atualizações</h3>
+
+        <p data-lang="incluido-card6-desc">Fotos e mensagens para saber como está o seu animal.</p>
+
+      </div>
+
+      <div class="card card-special">
+
+        <div class="icon"><i class="fas fa-circle-info"></i></div>
+
+        <h3 data-lang="incluido-card7-title">Precisa de algo especial?</h3>
+
+        <p data-lang="incluido-card7-desc">Cada animal é único e adaptamos o serviço às necessidades específicas</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+  <!-- CTA SECTION -->
+
+  <section id="cta-banner">
+
+    <div class="cta-content">
+
+      <div class="cta-icon">
+
+        <i class="fas fa-calendar-check"></i>
+
+      </div>
+
+      <h2 data-lang="cta-title">Pronto para Cuidar do Seu Melhor Amigo?</h2>
+
+      <p class="cta-description" data-lang="cta-desc">Marque agora e tenha a tranquilidade de saber que o seu animal está em boas mãos, no conforto do lar</p>
+
+      <div class="cta-buttons">
+
+        <button class="cta-btn cta-btn-primary" onclick="document.getElementById('calculadora').scrollIntoView({behavior: 'smooth'})" data-lang="cta-btn1">Marcar Serviço Agora</button>
+
+        <button class="cta-btn cta-btn-secondary" onclick="document.getElementById('porque-escolher').scrollIntoView({behavior: 'smooth'})" data-lang="cta-btn2">Saber Mais Sobre Nós</button>
+
+      </div>
+
+      <div class="cta-badges">
+
+        <div class="cta-badge">
+
+          <i class="fas fa-clock"></i>
+
+          <span data-lang="cta-badge1">Marcação em minutos</span>
+
+        </div>
+
+        <div class="cta-badge">
+
+          <i class="fas fa-handshake"></i>
+
+          <span data-lang="cta-badge2">Sem compromisso</span>
+
+        </div>
+
+        <div class="cta-badge">
+
+          <i class="fas fa-tag"></i>
+
+          <span data-lang="cta-badge3">Preço transparente</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- TABELA DE PREÇOS -->
+
+  <section id="tabela-precos">
+
+    <div class="container">
+
+      <h2 data-lang="precos-title">Tabela de Preços</h2>
+
+      <p class="subtitle" data-lang="precos-subtitle">Transparência total - saiba exatamente quanto vai pagar</p>
+
+
+
+      <div class="price-cards">
+
+        <div class="price-card">
+
+          <div class="icon"><i class="fas fa-dog"></i></div>
+
+          <h3 data-lang="precos-caes">Cães</h3>
+
+          <div class="price-block">
+
+            <p class="price-title"><i class="fas fa-circle" style="font-size: 8px; margin-right: 8px;"></i><span data-lang="precos-1visita">1 Visita por Dia</span></p>
+
+            <p><span data-lang="precos-ate2caes">Até 2 cães</span> <span>€14/dia</span></p>
+
+            <p><span data-lang="precos-34caes">3-4 cães</span> <span>€18/dia</span></p>
+
+          </div>
+
+          <div class="price-divider"></div>
+
+          <div class="price-block">
+
+            <p class="price-title"><i class="fas fa-circle" style="font-size: 8px; margin-right: 8px;"></i><span data-lang="precos-2visitas">2 Visitas por Dia</span></p>
+
+            <p><span data-lang="precos-ate2caes">Até 2 cães</span> <span>€28/dia</span></p>
+
+            <p><span data-lang="precos-34caes">3-4 cães</span> <span>€36/dia</span></p>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="price-card">
+
+          <div class="icon"><i class="fas fa-cat"></i></div>
+
+          <h3 data-lang="precos-gatos">Gatos</h3>
+
+          <div class="price-block">
+
+            <p class="price-title"><i class="fas fa-circle" style="font-size: 8px; margin-right: 8px;"></i><span data-lang="precos-1visita">1 Visita por Dia</span></p>
+
+            <p><span data-lang="precos-ate3gatos">Até 3 gatos</span> <span>€12/dia</span></p>
+
+            <p><span data-lang="precos-4plusgatos">4+ gatos</span> <span>€15/dia</span></p>
+
+          </div>
+
+          <div class="price-divider"></div>
+
+          <div class="price-block">
+
+            <p class="price-title"><i class="fas fa-circle" style="font-size: 8px; margin-right: 8px;"></i><span data-lang="precos-2visitas">2 Visitas por Dia</span></p>
+
+            <p><span data-lang="precos-ate3gatos">Até 3 gatos</span> <span>€16/dia</span></p>
+
+            <p><span data-lang="precos-4plusgatos">4+ gatos</span> <span>€19/dia</span></p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="deslocacao-info">
+
+        <div class="deslocacao-icon">
+
+          <i class="fas fa-car"></i>
+
+        </div>
+
+        <h4 data-lang="precos-desloc-title">Custos de Deslocação</h4>
+
+        <p class="deslocacao-price"><span class="price-value">€2,50</span> até <span class="price-value">€5</span></p>
+
+        <p class="deslocacao-subtitle" data-lang="precos-desloc-base">Base por visita</p>
+
+        <small data-lang="precos-desloc-nota">O custo é aplicado a cada visita (ex: 2 visitas/dia = custo ×2)</small>
+
+      </div>
+
+
+
+      <p class="combine-note" data-lang="precos-combine">★ Pode combinar cães e gatos no mesmo serviço! Use a calculadora para ver o preço exato.</p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- CALCULADORA -->
+
+  <section id="calculadora">
+
+    <div class="container">
+
+      <h2 data-lang="calc-title">Calcule o seu preço</h2>
+
+      <p class="subtitle" data-lang="calc-subtitle">Veja quanto custa cuidar do seu animal - transparente e sem surpresas</p>
+
+      <div class="calc-container">
+
+        <div class="form-group">
+
+          <label data-lang="calc-datas-label">Datas do Serviço</label>
+
+          <div class="dates">
+
+            <div>
+
+              <small data-lang="calc-data-inicio">Data de Início</small>
+
+              <input type="date" id="dataInicio">
+
+            </div>
+
+            <div>
+
+              <small data-lang="calc-data-fim">Data de Fim</small>
+
+              <input type="date" id="dataFim">
+
+            </div>
+
+          </div>
+
+          <p id="diasSelecionados" style="margin-top:10px; color:var(--gray); font-size:0.9rem;"><span id="diasNum">0</span> <span data-lang="calc-dias-selecionados">dias selecionados</span></p>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+          <label data-lang="calc-animais-label">Quantos Animais?</label>
+
+          <div class="animais">
+
+            <div class="animal-input">
+
+              <small><i class="fas fa-dog" style="color:var(--primary); margin-right:6px;"></i><span data-lang="calc-caes">Cães</span></small>
+
+              <select id="numCaes">
+
+                <option value="0" data-lang="calc-0caes">0 cães</option>
+
+                <option value="1" data-lang="calc-1cao">1 cão</option>
+
+                <option value="2" data-lang="calc-2caes">2 cães</option>
+
+                <option value="3" data-lang="calc-3caes">3 cães</option>
+
+                <option value="4" data-lang="calc-4caes">4 cães</option>
+
+              </select>
+
+            </div>
+
+            <div class="animal-input">
+
+              <small><i class="fas fa-cat" style="color:#f39c12; margin-right:6px;"></i><span data-lang="calc-gatos">Gatos</span></small>
+
+              <select id="numGatos">
+
+                <option value="0" data-lang="calc-0gatos">0 gatos</option>
+
+                <option value="1" data-lang="calc-1gato">1 gato</option>
+
+                <option value="2" data-lang="calc-2gatos">2 gatos</option>
+
+                <option value="3" data-lang="calc-3gatos">3 gatos</option>
+
+                <option value="4" data-lang="calc-4gatos">4 gatos</option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+          <label data-lang="calc-visitas-label">Visitas por Dia</label>
+
+          <div class="toggle-visitas">
+
+            <button class="toggle-btn active" data-visitas="1" data-lang="calc-1visita">1 Visita/Dia</button>
+
+            <button class="toggle-btn" data-visitas="2" data-lang="calc-2visitas">2 Visitas/Dia</button>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="form-group">
+        <label data-lang="calc-morada-label">A Sua Morada</label>
+<input type="text" id="morada" data-lang-placeholder="calc-morada-placeholder" placeholder="Ex: Rua da Boavista, Vila Nova de Gaia">
+
+<p class="info-text" data-lang="calc-morada-info">
+  Insira a morada para calcular a deslocação.  
+  Calculamos desde Matosinhos (sede).  
+  Valor máximo de deslocação: €5.
+</p>
+
+
+        </div>
+
+
+
+        <div class="resumo">
+
+          <h3 data-lang="calc-resumo">Resumo do Preço</h3>
+
+          <div class="resumo-item">
+            <span><span data-lang="calc-servico-caes">Serviço de Cães</span> (<span id="diasCao">0</span> <span data-lang="calc-dias">dias</span>)</span>
+            <strong id="precoCaes">€0.00</strong>
+          </div>
+
+          <div class="resumo-item">
+            <span><span data-lang="calc-servico-gatos">Serviço de Gatos</span> (<span id="diasGato">0</span> <span data-lang="calc-dias">dias</span>)</span>
+            <strong id="precoGatos">€0.00</strong>
+          </div>
+
+          <div class="resumo-item">
+            <span><span data-lang="calc-deslocacao">Deslocação</span> (<span id="visitasRes">0</span> <span data-lang="calc-visitas">visitas/dia</span>)</span>
+            <strong id="precoDesloc">€0.00</strong>
+          </div>
+
+          <div class="resumo-divider"></div>
+
+          <div class="resumo-total">
+            <span data-lang="calc-total">Total</span>
+            <strong id="total">€0.00</strong>
+          </div>
+
+        </div>
+
+
+
+        <button class="pedir" id="btn-reserva"><i class="fas fa-calendar-check"></i> <span data-lang="calc-btn-reserva">Pedir Reserva (Sem Pagamento)</span></button>
+
+        <p class="info" data-lang="calc-info">Após submeter, preencha o formulário para confirmar a recolha das chaves</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+<section id="reserva">
+
+  <div class="container">
+
+    <h2 data-lang="reserva-title">Complete a Sua Reserva</h2>
+
+    <p class="subtitle" data-lang="reserva-subtitle">Preencha os seus dados e entraremos em contacto em breve</p>
+
+    <div class="form-box">
+
+      <!-- Processo de Reserva -->
+      <div class="processo">
+
+        <div class="processo-header">
+
+          <i class="fas fa-check-circle"></i>
+
+          <strong data-lang="reserva-processo">Processo de Reserva</strong>
+
+        </div>
+
+        <ul>
+
+          <li><i class="fas fa-check"></i> <span data-lang="reserva-step1">Enviará o pedido sem pagamento</span></li>
+
+          <li><i class="fas fa-check"></i> <span data-lang="reserva-step2">Entraremos em contacto para validar</span></li>
+
+          <li><i class="fas fa-check"></i> <span data-lang="reserva-step3">Marcamos dia para recolha de chaves e conhecer os animais</span></li>
+
+          <li><i class="fas fa-check"></i> <span data-lang="reserva-step4">Confirmamos todos os detalhes antes do serviço começar</span></li>
+
+        </ul>
+
+      </div>
+
+      <div class="form-box">
+
+      <!-- Formulário -->
+      <form id="reservaForm" action="https://api.web3forms.com/submit" method="POST">
+
+      <!-- Campo oculto para Web3Forms -->
+      <input type="hidden" name="access_key" value="23657e9c-a013-41bd-a94e-83846395e297">
+      <input type="hidden" name="subject" value="Nova Reserva PawSitter">
+      <input type="hidden" name="from_name" value="PawSitter Reservas">
+
+      <!-- Campos ocultos para dados da calculadora -->
+      <input type="hidden" id="hidden-datas" name="datas" value="">
+      <input type="hidden" id="hidden-animais" name="animais-resumo" value="">
+      <input type="hidden" id="hidden-visitas" name="visitas-por-dia" value="">
+      <input type="hidden" id="hidden-distancia" name="preco-distancia" value="">
+      <input type="hidden" id="hidden-preco" name="preco-estimado" value="">
+
+      <h3 data-lang="reserva-form-title">Pedido de Reserva</h3>
+
+      <div class="form-grid">
+
+        <input type="text" id="nome-res" name="nome" data-lang-placeholder="reserva-nome" placeholder="Nome Completo *" required>
+
+        <input type="email" id="email-res" name="email" data-lang-placeholder="reserva-email" placeholder="Email *" required>
+
+        <input type="tel" id="telefone-res" name="telefone" data-lang-placeholder="reserva-telefone" placeholder="Telefone / WhatsApp *" required>
+
+        <input type="text" id="morada-res" name="morada" data-lang-placeholder="reserva-morada" placeholder="Morada Completa *" required>
+
+      </div>
+
+      <!-- Informações sobre animais -->
+      <div class="info-section">
+
+        <label><i class="fas fa-paw"></i> <span data-lang="reserva-info-animais">Informações sobre os Animais</span></label>
+
+        <textarea name="detalhes-animais" data-lang-placeholder="reserva-info-animais-placeholder" placeholder="Ex: Nome, idade, raça, temperamento, hábitos alimentares, medicação, alergias..."></textarea>
+
+        <small data-lang="reserva-info-animais-nota">Quanto mais detalhes, melhor poderemos cuidar!</small>
+
+      </div>
+
+      <!-- Instruções especiais -->
+      <div class="info-section">
+
+        <label><i class="fas fa-sticky-note"></i> <span data-lang="reserva-instrucoes">Instruções Especiais / Notas Adicionais</span></label>
+
+        <textarea name="instrucoes" data-lang-placeholder="reserva-instrucoes-placeholder" placeholder="Ex: Horários preferidos, instruções para medicação, rotinas especiais, acesso à casa..."></textarea>
+
+      </div>
+
+      <!-- Resumo do Serviço -->
+      <div class="resumo-reserva">
+
+        <h4><i class="fas fa-clipboard-list"></i> <span data-lang="reserva-resumo">Resumo do Serviço</span></h4>
+
+        <div class="resumo-grid">
+
+          <div>
+
+            <span class="label" data-lang="reserva-resumo-datas">Datas:</span>
+
+            <span class="value" id="r-datas">-</span>
+
+          </div>
+
+          <div>
+
+            <span class="label" data-lang="reserva-resumo-animais">Animais:</span>
+
+            <span class="value" id="r-animais">-</span>
+
+          </div>
+
+          <div>
+
+            <span class="label" data-lang="reserva-resumo-visitas">Visitas/dia:</span>
+
+            <span class="value" id="r-visitas">-</span>
+
+          </div>
+
+          <div>
+
+            <span class="label" data-lang="reserva-resumo-distancia">Distância:</span>
+
+            <span class="value" id="r-distancia">-</span>
+
+          </div>
+
+        </div>
+
+        <div class="resumo-price">
+
+          <span data-lang="reserva-preco-estimado">Preço Estimado:</span>
+
+          <span id="r-preco" class="price">€0.00</span>
+
+        </div>
+
+        <small data-lang="reserva-preco-nota">* Preço poderá ser ajustado após validação</small>
+
+      </div>
+
+      <!-- Forma de contacto preferida -->
+      <div class="contact-preference">
+
+        <label data-lang="reserva-contacto-preferido">Forma Preferida de Contacto</label>
+
+        <div class="radio-group">
+
+          <label class="radio-item">
+
+            <input type="radio" name="contacto" value="telefone" checked>
+
+            <span data-lang="reserva-contacto-telefone">Telefone</span>
+
+          </label>
+
+          <label class="radio-item">
+
+            <input type="radio" name="contacto" value="whatsapp">
+
+            <span data-lang="reserva-contacto-whatsapp">WhatsApp</span>
+
+          </label>
+
+          <label class="radio-item">
+
+            <input type="radio" name="contacto" value="email">
+
+            <span data-lang="reserva-contacto-email">Email</span>
+
+          </label>
+
+        </div>
+
+      </div>
+
+      <!-- Disclaimer -->
+      <div class="disclaimer">
+
+        <input type="checkbox" id="agree" name="agree" value="sim" required>
+
+        <label for="agree">
+
+          <i class="fas fa-check-square"></i>
+
+          <span data-lang="reserva-disclaimer">Concordo que o PawSitter entre em contacto comigo para validar esta reserva e marcar o dia da recolha de chaves. Compreendo que o preço final poderá ser ajustado após validação.</span>
+
+        </label>
+
+      </div>
+
+      <!-- Botão enviar -->
+      <button type="submit" class="btn-enviar"><i class="fas fa-paper-plane"></i> <span data-lang="reserva-btn-enviar">Enviar Pedido de Reserva</span></button>
+
+      <p class="response-time"><i class="fas fa-clock"></i> <span data-lang="reserva-response-time">Responderemos em até 24 horas</span></p>
+
+      </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+  <!-- AVALIAÇÕES -->
+
+  <section id="testemunhos">
+
+    <div class="container">
+
+      <h2 data-lang="reviews-title">O Que Dizem os Nossos Clientes</h2>
+
+      <p class="subtitle" data-lang="reviews-subtitle">Confiança comprovada por quem já utilizou o nosso serviço</p>
+
+
+
+      <div class="reviews-grid" id="reviewsGrid">
+        <!-- Reviews will be rendered here dynamically. Edit the `reviews` array in `script.js` to add/remove reviews. -->
+      </div>
+
+
+
+      <!-- CTA para deixar review - COMENTADO PARA USO FUTURO -->
+      <!-- 
+      <div class="review-cta">
+
+        <div class="review-cta-content">
+
+          <i class="fas fa-star review-cta-icon"></i>
+
+          <h3>Foi Nosso Cliente?</h3>
+
+          <p>A sua opinião é muito importante para nós e ajuda outros donos a conhecer o nosso serviço</p>
+
+          <a href="https://tally.so/r/kdN5Mj" target="_blank" class="btn-review">
+
+            <i class="fas fa-edit"></i> Partilhe a Sua Experiência
+
+          </a>
+
+        </div>
+
+      </div>
+      -->
+
+    </div>
+
+  </section>
+
+
+
+  <!-- PERGUNTAS FREQUENTES (FAQ) -->
+
+  <section id="faq">
+
+    <div class="container">
+
+      <h2 data-lang="faq-title">Perguntas Frequentes</h2>
+
+      <p class="subtitle" data-lang="faq-subtitle">Respostas às dúvidas mais comuns sobre o nosso serviço</p>
+
+
+
+      <div class="faq-list">
+
+        <details class="faq-item">
+
+          <summary data-lang="faq-q1">O que está incluído em cada visita?</summary>
+
+          <p data-lang="faq-a1">Cada visita inclui alimentação, água fresca, carinho e companhia, limpeza das áreas do animal (caixas de areia, comedouros), passeio com cães quando necessário, administração de medicação se necessário, e envio de fotos/atualizações para tranquilidade dos donos.</p>
+
+        </details>
+
+
+
+        <details class="faq-item">
+
+          <summary data-lang="faq-q2">Quanto tempo dura cada visita?</summary>
+
+          <p data-lang="faq-a2">Cada visita tem uma duração de aproximadamente 30-45 minutos, tempo suficiente para cuidar de todas as necessidades do seu animal, brincar e dar atenção. Se precisar de visitas mais longas, pode adicionar notas especiais na marcação.</p>
+
+        </details>
+
+
+
+        <details class="faq-item">
+
+          <summary data-lang="faq-q3">Como funciona o pagamento?</summary>
+
+          <p data-lang="faq-a3">Pode escolher entre pagamento online (por transferência ou MBWay) ou pagamento em mão no primeiro dia do serviço. O preço é sempre calculado automaticamente e apresentado antes de confirmar a marcação.</p>
+
+        </details>
+
+
+
+        <details class="faq-item">
+
+          <summary data-lang="faq-q4">E se o meu animal tiver necessidades especiais?</summary>
+
+          <p data-lang="faq-a4">Sem problema! No formulário de marcação há um campo de notas onde pode indicar horários específicos, medicação, comportamentos, alimentação, ou qualquer outra informação relevante. Adaptamos o serviço às necessidades únicas de cada animal.</p>
+
+        </details>
+
+
+
+        <details class="faq-item">
+
+          <summary data-lang="faq-q5">Posso cancelar ou alterar a marcação?</summary>
+
+          <p data-lang="faq-a5">Sim! Pedimos apenas que nos avise com 24 horas de antecedência para cancelamentos ou alterações. Entre em contacto connosco por email ou telefone e tratamos de tudo rapidamente.</p>
+
+        </details>
+
+
+
+        <details class="faq-item">
+
+          <summary data-lang="faq-q6">Como é calculada a deslocação?</summary>
+
+          <p data-lang="faq-a6">A deslocação tem um valor base de €2,50 + €0,50 por cada quilómetro de distância. Este custo é aplicado a cada visita (ex: se escolher 2 visitas por dia, o custo é multiplicado por 2). Tudo é calculado automaticamente na nossa calculadora de preços.</p>
+
+        </details>
+
+      </div>
+
+
+
+      <div class="faq-contact">
+
+        <p data-lang="faq-question">Ainda tem dúvidas?</p>
+
+        <button class="btn-primary" onclick="document.getElementById('contacto').scrollIntoView()" data-lang="faq-btn">Entre em Contacto</button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ENTRE EM CONTACTO -->
+
+  <section id="contacto">
+
+    <div class="container">
+
+      <h2 data-lang="contacto-title">Entre em Contacto</h2>
+
+      <div class="contact-grid">
+
+        <div class="contact-left">
+
+          <h3 data-lang="contacto-title">Entre em Contacto</h3>
+
+          <p data-lang="contacto-subtitle-left">Tem dúvidas ou precisa de ajuda com a sua marcação? Estamos aqui para ajudar!</p>
+
+          <div class="contact-item">
+
+            <div class="icon-circle">
+
+              <i class="fas fa-envelope"></i>
+
+            </div>
+
+            <div class="contact-item-content">
+
+              <strong data-lang="contacto-email">Email</strong>
+
+              <a href="mailto:info@pawsitterpt.site" class="email-link">info@pawsitterpt.site</a>
+
+              <small data-lang="contacto-email-time">Respondemos em 24 horas</small>
+
+            </div>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="icon-circle">
+
+              <i class="fas fa-phone"></i>
+
+            </div>
+
+            <div class="contact-item-content">
+
+              <strong data-lang="contacto-phone">Telefone</strong>
+
+              <a href="tel:+351938716627" class="email-link">+351 938 716 627</a>
+
+              <small data-lang="contacto-phone-time">Seg-Dom: 9h-20h</small>
+
+            </div>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="icon-circle">
+
+              <i class="fab fa-whatsapp"></i>
+
+            </div>
+
+            <div class="contact-item-content">
+
+              <strong data-lang="contacto-whatsapp">WhatsApp</strong>
+
+              <a href="https://wa.me/351938716627" class="email-link">+351 938 716 627</a>
+
+              <small data-lang="contacto-whatsapp-time">Resposta rápida</small>
+
+            </div>
+
+          </div>
+
+          <div class="social">
+
+            <h4 data-lang="contacto-social">Siga-nos</h4>
+
+            <div class="social-icons">
+
+              <a href="https://www.instagram.com/paw_sitter_/?locale=pt_BR&hl=bg" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="contact-right">
+
+          <div class="form-box">
+
+            <h3 data-lang="contacto-form-title">Envie-nos uma Mensagem</h3>
+
+            <form id="contactoForm" action="https://api.web3forms.com/submit" method="POST">
+
+              <input type="hidden" name="access_key" value="23657e9c-a013-41bd-a94e-83846395e297">
+              <input type="hidden" name="subject" value="Novo Contacto PawSitter">
+              <input type="hidden" name="from_name" value="Contacto PawSitter">
+
+              <label for="nome">Nome Completo *</label>
+
+              <input type="text" id="nome" name="nome" placeholder="Nome Completo *" required>
+
+              <label for="email">Email *</label>
+
+              <input type="email" id="email" name="email" placeholder="Email *" required>
+
+              <label for="telefone">Telefone</label>
+
+              <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+
+              <label for="assunto">Assunto *</label>
+
+              <select id="assunto" name="assunto" required>
+
+                <option value="">Escolha um assunto</option>
+
+                <option>Marcação de serviço</option>
+
+                <option>Dúvidas gerais</option>
+
+                <option>Alterações ou cancelamentos</option>
+
+                <option>Outros</option>
+
+              </select>
+
+              <label for="mensagem">Mensagem *</label>
+
+              <textarea id="mensagem" name="mensagem" placeholder="Mensagem *" rows="5" required></textarea>
+
+              <button type="submit"><i class="fas fa-paper-plane"></i> <span data-lang="footer-btn">Enviar Mensagem</span></button>
+
+            </form>
+
+            <p class="note" data-lang="contacto-note"><i class="fas fa-clock"></i> Responderemos em até 24 horas</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-content">
+
+        <div class="footer-column footer-logo-column">
+
+          <div class="footer-logo">
+
+            <img src="logo.png" alt="Pawsitter" class="logo-svg">
+
+          </div>
+
+          <p class="footer-description" data-lang="footer-desc">Cuidado profissional para o seu animal de estimação, no conforto do lar.<br>Marcação simples, preço transparente.</p>
+
+        </div>
+
+        <div class="footer-column">
+
+          <h4 data-lang="footer-links">Links Rápidos</h4>
+
+          <ul>
+
+            <li><a href="#"><i class="fas fa-home"></i> <span data-lang="footer-home">Página inicial</span></a></li>
+
+            <li><a href="#porque-escolher"><i class="fas fa-question-circle"></i> <span data-lang="footer-about">Sobre</span></a></li>
+
+            <li><a href="#testemunhos"><i class="fas fa-star"></i> <span data-lang="footer-reviews">Avaliações</span></a></li>
+
+            <li><a href="#calculadora"><i class="fas fa-calculator"></i> <span data-lang="footer-book">Marcar Serviço</span></a></li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-column">
+
+          <h4 data-lang="footer-services">Serviços</h4>
+
+          <ul>
+
+            <li><i class="fas fa-home"></i> <span data-lang="footer-service1">Pet-Sitting ao Domicílio</span></li>
+
+            <li><i class="fas fa-dog"></i> <span data-lang="footer-service2">Cuidado de Cães</span></li>
+
+            <li><i class="fas fa-cat"></i> <span data-lang="footer-service3">Cuidado de Gatos</span></li>
+
+            <li><i class="fas fa-clock"></i> <span data-lang="footer-service4">Visitas Flexíveis</span></li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-column footer-contact-column">
+
+          <h4 data-lang="footer-contact">Contacto</h4>
+
+          <ul>
+
+            <li><a href="mailto:info@pawsitterpt.site"><i class="fas fa-envelope"></i> info@pawsitterpt.site</a></li>
+
+            <li><a href="tel:+351938716627"><i class="fas fa-phone"></i> +351 938 716 627</a></li>
+
+          </ul>
+
+          <button class="footer-btn"><i class="fas fa-paper-plane"></i> <span data-lang="footer-btn">Enviar Mensagem</span></button>
+
+          <div class="footer-socials">
+
+            <a href="https://www.instagram.com/paw_sitter_/?locale=pt_BR&hl=bg" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <p class="copyright" data-lang="footer-copyright">© 2026 PawSitter. Todos os direitos reservados.</p>
+
+    </div>
+
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scroll-to-top" class="scroll-to-top" title="Voltar ao início">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
