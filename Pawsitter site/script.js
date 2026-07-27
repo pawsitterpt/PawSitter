@@ -761,6 +761,17 @@ translatePage(currentLang);
 // Edit this array to add/remove reviews. Each item may have: name, date, rating, text {pt,en}, image (optional path)
 const reviews = [
   {
+    id: 'josé-2026-07-27',
+    name: 'José Manuel Portela Mateus',
+    date: '27/07/2026',
+    rating: 5,
+    text: {
+      pt: 'A melhor opção para quem quer ir de férias descansado, sabendo que os seus patudos ficam em segurança, bem cuidados e acima de tudo com carinho e atenção!Foi a melhor decisão que tomei. Em 7 anos, nunca tinha ido de férias para não deixar o meu kai sozinho, e desde então, com este acompanhamento, fico descansado e recebo fotos e vídeos 2 vezes por dia. Obrigado pelo serviço! Recomendo 100%',
+      en: 'The best option for those who want to go on vacation relaxed, knowing that their pets are safe, well cared for and above all with love and attention! It was the best decision I made. In 7 years, I had never gone on vacation to avoid leaving my Kai alone, and since then, with this support, I feel at ease and receive photos and videos twice a day. Thank you for the service! I recommend it 100%.'
+    },
+    image: null
+    },
+  {
     id: 'dialla-2026-01-23',
     name: 'Dialla Dorneles',
     date: '23/01/2026',
@@ -782,17 +793,7 @@ const reviews = [
     },
     image: 'Imagens reviews/Kimi_review.jpeg'
     },
-  {
-    id: 'josé-2026-07-27',
-    name: 'José Manuel Portela Mateus',
-    date: '27/07/2026',
-    rating: 5,
-    text: {
-      pt: 'A melhor opção para quem quer ir de férias descansado, sabendo que os seus patudos ficam em segurança, bem cuidados e acima de tudo com carinho e atenção!Foi a melhor decisão que tomei. Em 7 anos, nunca tinha ido de férias para não deixar o meu kai sozinho, e desde então, com este acompanhamento, fico descansado e recebo fotos e vídeos 2 vezes por dia. Obrigado pelo serviço! Recomendo 100%',
-      en: 'The best option for those who want to go on vacation relaxed, knowing that their pets are safe, well cared for and above all with love and attention! It was the best decision I made. In 7 years, I had never gone on vacation to avoid leaving my Kai alone, and since then, with this support, I feel at ease and receive photos and videos twice a day. Thank you for the service! I recommend it 100%.'
-    },
-    image: null
-    },
+  
 ];
 
 function renderReviews() {
